@@ -78,19 +78,8 @@ public class Animales {
         this.nombre = nombre;
     }
 
-    public String getTipo() {
-        String animal = "";
-        switch (this.tipo) {
-            case 1:
-                animal = "Perro";
-            case 2:
-                animal = "Gato";
-            case 3:
-                animal = "Loro";
-            case 4:
-                animal = "Canario";
-        }
-        return animal;
+    public int getTipo() {
+        return this.tipo;
     }
 
     public void setTipo(int tipo) {
