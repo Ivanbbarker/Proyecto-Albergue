@@ -21,7 +21,7 @@ Para la resolución de este proyecto partimos de los siguientes requisitos:
 
 >La propia protectora tendrá guardados los registros de adopciones.
 
-Tabla ANIMALES/TIPO
+Tabla ANIMALES/TIPO =>
 Perro : 1
 Gato : 2
 Loro : 3
