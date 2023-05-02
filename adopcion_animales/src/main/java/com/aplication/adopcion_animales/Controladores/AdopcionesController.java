@@ -49,8 +49,8 @@ public class AdopcionesController {
     @GetMapping("/detalle/{id}")
     public String verAnimalDetalle(@PathVariable Long id, Model model) {
         Adopciones adopcion = adopcionesService.findById(id);
-        model.addAttribute("animal", adopcion);
-        return "/views/Animales/animal-detalle";
+        model.addAttribute("adopcion", adopcion);
+        return "/views/Adopciones/adopcion-detalle";
     }
 
     // Crear un nuevo animal (POST)
