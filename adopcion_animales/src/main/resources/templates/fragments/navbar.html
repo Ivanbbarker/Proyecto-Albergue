@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+        <!-- Agregar referencia al archivo CSS externo -->
+        <link rel="stylesheet" href="/adopcion_animales/src/main/resources/static/css/styles.css">
+
+    </head>
+<body>
+    <!-- Fragmento de la barra de navegación -->
+    <nav th:fragment="navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- Contenedor para centrar la barra de navegación -->
+        <div class="container">
+            <!-- Enlace y logotipo de la marca -->
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" alt="Logo" height="40">
+            </a>
+            <!-- Botón de alternancia de navegación para pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Icono del botón de alternancia -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenedor de la lista de elementos de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Lista de elementos de navegación -->
+                <ul class="navbar-nav">
+                    <!-- Elemento de navegación individual (Inicio) -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://localhost:8080/index">
+                            <i class="bi bi-house-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <!-- Elemento de navegación individual (Productos) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080/animales/listado-animales">
+                            <i class="fas fa-paw"></i> Animales
+                        </a>
+                    </li>
+                    <!-- Elemento de navegación individual (Clientes) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080/empleados">
+                            <i class="bi bi-people-fill"></i> Empleados
+                        </a>
+                    </li>
+                <!-- Elemento de navegación individual (Users) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080/adoptantes/listado-adoptantes">
+                            <i class="bi bi-people-fill"></i> Adoptantes
+                        </a>
+                    </li>
+                    <!-- Elemento de navegación Eventos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080/adopciones/listado-adopciones">
+                            <i class="bi bi-calendar-event"></i> Adopciones
+                        </a>
+                    </li>                    
+                    <!-- Elemento de navegación individual (Contacto) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-envelope-fill"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+                <!-- Aquí puedes añadir más elementos a la barra de navegación, como un formulario de búsqueda o enlaces adicionales -->
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
