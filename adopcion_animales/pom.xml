@@ -6,7 +6,7 @@
 		<!-- Spring Boot Starter Web: para construir aplicaciones web con Spring MVC -->
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.10</version>
+		<version>2.7.11</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springweb</groupId>
@@ -26,7 +26,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
-		
+		<!-- Herramientas Spring para desarrolladores-->
+		<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <optional>true</optional>
+    	</dependency>
 
 		<!-- Spring Boot Starter Thymeleaf: para utilizar Thymeleaf como motor de plantillas -->
 		<dependency>
@@ -38,6 +43,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<!--Seguridad de Spring -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
+			<version>6.0.3</version>
+		</dependency>
+
 		<!-- MySQL Connector: para conectarse a bases de datos MySQL -->
 		<dependency>
 			<groupId>mysql</groupId>

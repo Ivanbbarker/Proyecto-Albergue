@@ -30,7 +30,7 @@ public class Animales {
     private String nombre;
 
     @Column(name = "tipo")
-    private int tipo;
+    private String tipo;
 
     @Column(name = "patologia")
     private String patologia;
@@ -44,7 +44,7 @@ public class Animales {
     public Animales() {
     }
 
-    public Animales(String raza, String nombre, int tipo, String patologia, Date fechaEntrada,
+    public Animales(String raza, String nombre, String tipo, String patologia, Date fechaEntrada,
             Date fechaSalida) {
         this.raza = raza;
         this.nombre = nombre;
@@ -78,11 +78,11 @@ public class Animales {
         this.nombre = nombre;
     }
 
-    public int getTipo() {
+    public String getTipo() {
         return this.tipo;
     }
 
-    public void setTipo(int tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 

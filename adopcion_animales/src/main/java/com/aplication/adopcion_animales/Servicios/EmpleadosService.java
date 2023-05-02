@@ -34,6 +34,7 @@ public class EmpleadosService {
         return empleadosRepository.save(empleado);
     }
 
+    //Actualizar un empleado existente
     public Empleados update(Long id, Empleados empleadoDetails){
         Empleados empleado = findById(id);
 

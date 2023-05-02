@@ -29,7 +29,11 @@ public class AnimalesService {
             throw new RuntimeException("Animal con el ID "+ id +" no encontrado.");
         }
     }
-
+/* 
+    public List<Animales> findByTipo(String tipo){
+        return animalesRepository.findByTipo(tipo);
+    }
+*/
     //Guardar un animal
     public Animales save(Animales animal){
         return animalesRepository.save(animal);
