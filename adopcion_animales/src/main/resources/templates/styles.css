@@ -1,0 +1,271 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #97b681;
+  }
+  
+  a {
+    color: #0f0f0f;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos de la navbar */
+  
+  .nav-links {
+    background-color: #bddfa6;
+    color: #0e0d0d;
+    display: flexbox;
+    align-items: center;
+    padding: 5rem;
+  }
+  
+  .navbar-logo {
+    margin-right: auto;
+    font-size: 2rem;
+  }
+  
+  .navbar-menu {
+    display: auto !important;
+    align-items: center;
+  }
+  
+  .navbar-item {
+    margin-left: 2rem;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-item:last-child {
+    margin-right: 2rem;
+  }
+  
+  .navbar-item:hover {
+    color: #fff;
+  }
+  
+  /* Estilos del hero */
+  
+  .hero {
+    background-image: url("hero.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #0c0c0c;
+  }
+  
+  .hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Carrusel styles*/
+
+  .carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 60px;
+    height: 6px;
+    border: none;
+    border-radius: 24px;
+  }
+  
+  .carousel-indicators [data-bs-target] span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #7952b3;
+    border-radius: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+ }
+  /* Estilos de las secciones */
+  
+  section {
+    padding: 3rem 1rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  /* Estilos de la sección de animales */
+/*
+  .card {
+    border-radius: 10%;
+    border-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .animal-card {
+    width: 300px;
+    margin: 2rem;
+  }
+  
+  .animal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .animal-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .animal-card p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }*/
+  /* Estilos de la sección de adopciones */
+  
+  .adopcion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .adopcion-card {
+    width: 300px;
+    margin: 2rem;
+  }
+  
+  .adopcion-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .adopcion-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .adopcion-card p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos del formulario de contacto */
+  
+  .formulario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formulario {
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .formulario h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formulario-label {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .formulario-input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 2px solid #75c73e;
+  }
+  
+  .formulario-textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 2px solid #75c73e;
+  }
+  
+  .formulario-submit {
+    background-color: #75c73e;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .formulario-submit:hover {
+    background-color: #599032;
+  }
+  footer{
+    background-color: #599032;
+  }
+  /* Estilos para dispositivos móviles */
+  
+  @media only screen and (max-width: 768px) {
+    .hero-text {
+      top: 40%;
+    }
+    .animal-container,
+    .adopcion-container,
+    .empleado-container {
+      justify-content: center;
+    }
+  
+    .animal-card,
+    .adopcion-card,
+    .empleado-card {
+      margin: 1rem;
+    }
+  }
+  
